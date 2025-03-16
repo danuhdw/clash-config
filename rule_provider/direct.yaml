@@ -1,0 +1,107 @@
+payload:
+  # Local Network
+  # IP range for local network access
+  - IP-CIDR,192.168.1.1/24
+
+  # E-Wallet Services
+  # Domains for popular e-wallet platforms in Indonesia
+  # DANA
+  - DOMAIN,dana.ingest.threatcast.guardsquare.com
+  - DOMAIN,gw-dana.ebuckler.com
+  - DOMAIN-SUFFIX,m.dana.id
+  - DOMAIN-SUFFIX,saas.dana.id
+  # GoPay
+  - DOMAIN-SUFFIX,gojekapi.com
+  - DOMAIN-SUFFIX,gopayapi.com
+  # LinkAja
+  - DOMAIN-SUFFIX,linkaja.com
+  # OVO
+  - DOMAIN-SUFFIX,ovo.id
+
+  # Internet Service Providers (ISP)
+  # Domains related to ISP mobile apps or services
+  # AXISnet
+  - DOMAIN,api.axis.co.id
+  # bima+
+  - DOMAIN,bimaplus-api.ioh.co.id
+  - DOMAIN,bimaplus.tri.co.id
+  # by.U
+  - DOMAIN,api.byu.id
+  # myXL
+  - DOMAIN-KEYWORD,xlaxiata
+
+  # Mobile Banking (M-Banking)
+  # Domains for mobile banking applications
+  # BRImo
+  - DOMAIN,brimo.bri.co.id
+  # Jago
+  - DOMAIN,api.jago.com
+  - DOMAIN,assets.jago.com
+  - DOMAIN,jago-realtime.ably.io
+  - DOMAIN,jago-rest.ably.io
+  - DOMAIN,jago-c-fallback.ably-realtime.com
+  # Neo Bank
+  - DOMAIN-SUFFIX,bankneo.co.id
+  # SeaBank
+  - DOMAIN-SUFFIX,seabank.co.id
+  # SuperBank
+  - DOMAIN,api.super-id.net
+
+  # Marketplaces
+  # Domains for popular e-commerce platforms
+  # Shopee
+  - DOMAIN,api.shopee.co.id
+  - DOMAIN,cf.shopee.co.id
+  - DOMAIN,seller-app.shopee.co.id
+  - DOMAIN-SUFFIX,shopee.io
+  - DOMAIN-SUFFIX,shopeemobile.com
+  # Tokopedia
+  - DOMAIN,gql.tokopedia.com
+  - DOMAIN,hub.tokopedia.com
+  - DOMAIN,ecs7.tokopedia.net
+
+  # Miscellaneous Services
+  # Various other services and platforms
+  # BukaOlshop
+  - DOMAIN,api2.bukaolshop.com
+  - DOMAIN,storage3.bukaolshop.com
+  - DOMAIN,openapi.bukaolshop.net
+  # Cloudflare
+  - DOMAIN-SUFFIX,cloudflare.com
+  # Datatabu
+  - DOMAIN-SUFFIX,datatabu.com
+  # JKI
+  - DOMAIN-SUFFIX,slojki.com
+  # Firebase
+  - DOMAIN-KEYWORD,firebase
+  # Flip
+  - DOMAIN-SUFFIX,flip.id
+  # Github
+  - DOMAIN,raw.githubusercontent.com
+  # Google
+  - DOMAIN,www.google.com
+  - DOMAIN-SUFFIX,googleapis.com
+  # NetQ
+  - DOMAIN-SUFFIX,netq.me
+  # OSS
+  - DOMAIN-SUFFIX,oss.go.id
+  # Pegadaian
+  - DOMAIN,apidigital.pegadaian.co.id
+  - DOMAIN,digital.pegadaian.co.id
+  # PLN Mobile
+  - DOMAIN-SUFFIX,iconcash.id
+  - DOMAIN-SUFFIX,pln.co.id
+  - DOMAIN-SUFFIX,plndigital.id
+  # Ujang Gatrik
+  - DOMAIN,siujang.esdm.go.id
+  # Zerotier
+  - DOMAIN-SUFFIX,zerotier.com
+  - DST-PORT,43899
+  - DST-PORT,9993
+
+  # Test, Download, and Debug Services
+  # Domains for testing, file downloads, or debugging (commented out)
+  # - DOMAIN-SUFFIX,filedon.co
+  # - DOMAIN-SUFFIX,surrit.com
+  # - DOMAIN-SUFFIX,updrv.com
+  # - DOMAIN-SUFFIX,pixeldrain.com

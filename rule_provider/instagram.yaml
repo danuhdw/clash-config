@@ -1,0 +1,11 @@
+payload:
+  # Domains and keywords related to Instagram services and infrastructure
+  # Keywords for Instagram-related traffic
+  - DOMAIN-KEYWORD,instagram
+
+  # Domain suffixes for Instagram and its affiliated services
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,ig.me
+  - DOMAIN-SUFFIX,igsonar.com
+  - DOMAIN-SUFFIX,instagram.c10r.facebook.com
+  - DOMAIN-SUFFIX,instagram.com
