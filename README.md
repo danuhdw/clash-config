@@ -19,16 +19,16 @@ openclash-config/
 ├── config-dual-modem.yaml        # Configuration for dual modem setups
 ├── config.yaml                   # Configuration for single modem setups
 ├── proxy_provider/               # Proxy provider files
+│   ├── proxies.yaml              # Proxy list for single modem
 │   ├── wan1.yaml                 # Proxy list for WAN-1
-│   ├── wan2.yaml                 # Proxy list for WAN-2
-│   └── proxies.yaml              # Proxy list for single modem
+│   └── wan2.yaml                 # Proxy list for WAN-2
 ├── rule_provider/                # Rule provider files
-│   ├── direct.yaml               # Rules for direct traffic
-│   ├── reject.yaml               # Rules for blocking traffic
 │   ├── adult.yaml                # Rules for adult content
+│   ├── direct.yaml               # Rules for direct traffic
 │   ├── facebook.yaml             # Rules for Facebook
 │   ├── games.yaml                # Rules for gaming traffic
 │   ├── instagram.yaml            # Rules for Instagram
+│   ├── reject.yaml               # Rules for blocking traffic
 │   ├── tiktok.yaml               # Rules for TikTok
 │   ├── twitter.yaml              # Rules for Twitter
 │   ├── whatsapp.yaml             # Rules for WhatsApp
@@ -55,7 +55,7 @@ cd openclash-config
 - Edit the files in the `proxy_provider/` and `rule_provider/` directories to match your proxy lists and rules.
 
 ### **4. Deploy the Configuration**
-- Copy the desired configuration file to your OpenClash configuration directory (usually `/etc/openclash/config/`).
+- Copy the desired configuration file to your OpenClash configuration directory (usually `/etc/openclash/`).
 - Restart OpenClash to apply the new configuration.
 
 ---
