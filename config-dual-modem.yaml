@@ -173,63 +173,63 @@ rule-providers:
   REJECT:
     type: file
     path: "./rule_provider/reject.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/reject.yaml"
     interval: 3600
     behavior: classical
 
   Adult:
     type: file
     path: "./rule_provider/adult.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/adult.yaml"
     interval: 3600
     behavior: classical
 
   Facebook:
     type: file
     path: "./rule_provider/facebook.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/facebook.yaml"
     interval: 3600
     behavior: classical
 
   Games:
     type: file
     path: "./rule_provider/games.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/games.yaml"
     interval: 3600
     behavior: classical
 
   Instagram:
     type: file
     path: "./rule_provider/instagram.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/instagram.yaml"
     interval: 3600
     behavior: classical
 
   TikTok:
     type: file
     path: "./rule_provider/tiktok.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/tiktok.yaml"
     interval: 3600
     behavior: classical
 
   Twitter:
     type: file
     path: "./rule_provider/twitter.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/twitter.yaml"
     interval: 3600
     behavior: classical
 
   WhatsApp:
     type: file
     path: "./rule_provider/whatsapp.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/whatsapp.yaml"
     interval: 3600
     behavior: classical
 
   YouTube:
     type: file
     path: "./rule_provider/youtube.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/youtube.yaml"
     interval: 3600
     behavior: classical
 
