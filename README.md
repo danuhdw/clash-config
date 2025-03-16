@@ -43,7 +43,7 @@ openclash-config/
 ### **1. Clone the Repository**
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/openclash-config.git
+git clone https://github.com/danuhdw/openclash-config.git
 cd openclash-config
 ```
 
