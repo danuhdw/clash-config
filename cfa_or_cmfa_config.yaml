@@ -199,7 +199,7 @@ rules:
   # Block unwanted traffic using the REJECT rule.
   - RULE-SET,REJECT,REJECT
 
-  # Route adult content through SPECIAL ACCESS.
+  # Route adult content.
   - RULE-SET,Adult,REJECT
 
   # Direct traffic for local or priority services.
