@@ -48,8 +48,9 @@ cd openclash-config
 ```
 
 ### **2. Choose Your Configuration**
-- For **dual modem** setups, use `config-dual-modem.yaml`.
-- For **single modem** setups, use `config.yaml`.
+- For **OpenClash** setups, use `openclash_config.yaml`.
+- For **OpenClash (dual modem)** setups, use `openclash_dual_modem_config.yaml`.
+- For **CFA or CMFA** setups, use `cfa_or_cfma_config.yaml`.
 
 ### **3. Customize Proxy and Rule Providers**
 - Edit the files in the `proxy_provider/` and `rule_provider/` directories to match your proxy lists and rules.
