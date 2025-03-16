@@ -200,7 +200,7 @@ rules:
   - RULE-SET,REJECT,REJECT
 
   # Route adult content through SPECIAL ACCESS.
-  - RULE-SET,Adult,SPECIAL ACCESS
+  - RULE-SET,Adult,REJECT
 
   # Direct traffic for local or priority services.
   - RULE-SET,DIRECT,DIRECT
