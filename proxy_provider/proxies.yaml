@@ -1,7 +1,7 @@
 # Define anchors for common configurations
 common: &common
   type: trojan
-  server: 172.67.5.14
+  server: 104.17.3.81
   port: 443
   password: home # Default password, can be overridden in each proxy
   udp: true
