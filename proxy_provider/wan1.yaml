@@ -1,0 +1,49 @@
+# Define anchors for common configurations
+common: &common
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: home # Default password, can be overridden in each proxy
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  interface-name: eth1 # Specify the network interface to use
+
+# Define anchor for ws-opts configuration
+ws_opts: &ws_opts
+  path: /trojan # Default path, can be overridden in each proxy
+
+proxies:
+
+  # NetQ
+  - name: "N-ID1 Reguler"
+    <<: *common
+    # password: override_default_password
+    sni: id1.danupoint.my.id
+    ws-opts:
+      <<: *ws_opts
+      # path: "/override_default_path"
+      headers:
+        Host: id1.danupoint.my.id
+
+  # NetQ
+  - name: "N-ID2 Reguler"
+    <<: *common
+    # password: override_default_password
+    sni: id2.danupoint.my.id
+    ws-opts:
+      <<: *ws_opts
+      # path: "/override_default_path"
+      headers:
+        Host: id2.danupoint.my.id
+
+  # NetQ
+  - name: "N-ID3 Reguler"
+    <<: *common
+    # password: override_default_password
+    sni: id3.danupoint.my.id
+    ws-opts:
+      <<: *ws_opts
+      # path: "/override_default_path"
+      headers:
+        Host: id3.danupoint.my.id
