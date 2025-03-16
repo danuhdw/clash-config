@@ -16,24 +16,24 @@ This repository contains OpenClash configurations for both **dual modem** and **
 ## **File Structure**
 ```
 openclash-config/
-├── openclash_dual_modem.yaml # Configuration for dual modem setups
-├── openclash_single_modem.yaml # Configuration for single modem setups
-├── proxy_provider/ # Proxy provider files
-│ ├── wan1.yaml # Proxy list for WAN-1
-│ ├── wan2.yaml # Proxy list for WAN-2
-│ └── proxies.yaml # Proxy list for single modem
-├── rule_provider/ # Rule provider files
-│ ├── direct.yaml # Rules for direct traffic
-│ ├── reject.yaml # Rules for blocking traffic
-│ ├── adult.yaml # Rules for adult content
-│ ├── facebook.yaml # Rules for Facebook
-│ ├── games.yaml # Rules for gaming traffic
-│ ├── instagram.yaml # Rules for Instagram
-│ ├── tiktok.yaml # Rules for TikTok
-│ ├── twitter.yaml # Rules for Twitter
-│ ├── whatsapp.yaml # Rules for WhatsApp
-│ └── youtube.yaml # Rules for YouTube
-└── README.md # This file
+├── openclash_dual_modem.yaml     # Configuration for dual modem setups
+├── openclash_single_modem.yaml   # Configuration for single modem setups
+├── proxy_provider/               # Proxy provider files
+│   ├── wan1.yaml                 # Proxy list for WAN-1
+│   ├── wan2.yaml                 # Proxy list for WAN-2
+│   └── proxies.yaml              # Proxy list for single modem
+├── rule_provider/                # Rule provider files
+│   ├── direct.yaml               # Rules for direct traffic
+│   ├── reject.yaml               # Rules for blocking traffic
+│   ├── adult.yaml                # Rules for adult content
+│   ├── facebook.yaml             # Rules for Facebook
+│   ├── games.yaml                # Rules for gaming traffic
+│   ├── instagram.yaml            # Rules for Instagram
+│   ├── tiktok.yaml               # Rules for TikTok
+│   ├── twitter.yaml              # Rules for Twitter
+│   ├── whatsapp.yaml             # Rules for WhatsApp
+│   └── youtube.yaml              # Rules for YouTube
+└── README.md                     # This file
 ```
 
 ---
