@@ -15,7 +15,7 @@ ws_opts: &ws_opts
 proxies:
 
   # NetQ
-  - name: "N-ID1 Reguler"
+  - name: "N-ID1"
     <<: *common
     # password: override_default_password
     sni: id1.danupoint.my.id
@@ -26,7 +26,7 @@ proxies:
         Host: id1.danupoint.my.id
 
   # NetQ
-  - name: "N-ID2 Reguler"
+  - name: "N-ID2"
     <<: *common
     # password: override_default_password
     sni: id2.danupoint.my.id
@@ -37,7 +37,7 @@ proxies:
         Host: id2.danupoint.my.id
 
   # NetQ
-  - name: "N-ID3 Reguler"
+  - name: "N-ID3"
     <<: *common
     # password: override_default_password
     sni: id3.danupoint.my.id
