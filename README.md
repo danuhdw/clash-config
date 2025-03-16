@@ -16,8 +16,8 @@ This repository contains OpenClash configurations for both **dual modem** and **
 ## **File Structure**
 ```
 openclash-config/
-├── openclash_dual_modem.yaml     # Configuration for dual modem setups
-├── openclash_single_modem.yaml   # Configuration for single modem setups
+├── config-dual-modem.yaml        # Configuration for dual modem setups
+├── config.yaml                   # Configuration for single modem setups
 ├── proxy_provider/               # Proxy provider files
 │   ├── wan1.yaml                 # Proxy list for WAN-1
 │   ├── wan2.yaml                 # Proxy list for WAN-2
