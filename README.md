@@ -55,7 +55,7 @@ cd openclash-config
 - Edit the files in the `proxy_provider/` and `rule_provider/` directories to match your proxy lists and rules.
 
 ### **4. Deploy the Configuration**
-- Copy the desired configuration file to your OpenClash configuration directory (usually `/etc/openclash/`).
+- Copy the desired configuration file to your OpenClash configuration directory (usually `/etc/openclash/config/`).
 - Restart OpenClash to apply the new configuration.
 
 ---
