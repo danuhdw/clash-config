@@ -164,9 +164,9 @@ rule-providers:
   # Ensure the YAML files exist in the specified paths.
 
   DIRECT:
-    type: file
+    type: http
     path: "./rule_provider/direct.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/direct.yaml"
     interval: 3600
     behavior: classical
     
