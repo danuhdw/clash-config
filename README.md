@@ -43,13 +43,13 @@ openclash-config/
 ### **1. Clone the Repository**
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/openclash-config.git
+git clone https://github.com/danuhdw/openclash-config.git
 cd openclash-config
 ```
 
 ### **2. Choose Your Configuration**
-- For **dual modem** setups, use `openclash_dual_modem.yaml`.
-- For **single modem** setups, use `openclash_single_modem.yaml`.
+- For **dual modem** setups, use `config-dual-modem.yaml`.
+- For **single modem** setups, use `config.yaml`.
 
 ### **3. Customize Proxy and Rule Providers**
 - Edit the files in the `proxy_provider/` and `rule_provider/` directories to match your proxy lists and rules.
