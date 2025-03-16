@@ -1,0 +1,256 @@
+# config-dual-modem.yaml, Configuration for dual modem setup
+
+# This option enables unified latency measurement for all proxies.
+# When enabled, OpenClash will measure latency for all proxies simultaneously,
+# reducing the time required for latency testing. This is useful for dual modem setups
+# where latency consistency is critical.
+unified-delay: true
+
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: rule
+
+# RESTful web API listening address
+# external-controller: 0.0.0.0:9090
+
+# A relative path to the configuration directory or an absolute path to a
+# directory in which you put some static web resource. Clash core will then
+# serve it at `http://{{external-controller}}/ui`.
+# external-ui: "/usr/share/openclash/ui"
+
+# Secret for the RESTful API (optional)
+# Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
+# ALWAYS set a secret if RESTful API is listening on 0.0.0.0
+secret: "12345"
+
+# DNS server settings
+# This section is optional. When not present, the DNS server will be disabled.
+dns:
+  enable: true
+
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # Specify IP addresses only
+  default-nameserver:
+    # Option 1 | AdGuard DNS
+    # - 94.140.14.14
+    # - 94.140.15.15
+
+    # Option 2 | Cloudflare DNS
+    - 1.1.1.1
+    - 1.0.0.1
+
+    # Option 3 | Google DNS
+    # - 8.8.8.8
+    # - 8.8.4.4
+
+  # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
+  # All DNS questions are sent directly to the nameserver, without proxies
+  # involved. Clash answers the DNS question with the first result gathered.
+  nameserver:
+    # Option 1 | AdGuard DNS
+    # - 94.140.14.14
+    # - 94.140.15.15
+    # - https://dns.adguard-dns.com/dns-query
+    # - tls://dns.adguard-dns.com
+
+    # Option 2 | Cloudflare DNS
+    - 1.1.1.1
+    - 1.0.0.1
+    - https://dns.cloudflare.com/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+
+    # Option 3 | Google DNS
+    # - 8.8.8.8
+    # - 8.8.4.4
+    # - https://dns.google/dns-query
+    # - tls://dns.google
+
+proxy-providers:
+  # Note: Recommended Healt Check URL
+  # - https://cp.cloudflare.com
+  # - https://www.gstatic.com/generate_204
+
+  WAN-1:
+    type: http
+    path: "./proxy_provider/wan1.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/proxy_provider/wan1.yaml"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+
+  WAN-2:
+    type: http
+    path: "./proxy_provider/wan2.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/proxy_provider/wan2.yaml"
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com
+      interval: 300
+      timeout: 5000
+      lazy: true
+      expected-status: 204
+
+proxy-groups:
+  # Note: Healt Check
+  # It will only check the proxies field of the proxy group,
+  # and will not check the proxies of the proxy providers introduced through use.
+
+  # MANUAL SELECT allows you to manually choose between WAN-1 and WAN-2.
+  # Useful for testing or manual failover
+  - name: MANUAL SELECT
+    type: select
+    use:
+      - WAN-1
+      - WAN-2
+
+  # SPECIAL ACCESS is used for specific traffic that requires special handling,
+  # such as blocking (REJECT) or fallback to another proxy.
+  - name: SPECIAL ACCESS
+    type: select
+    proxies:
+      - REJECT
+      - BEST PING 1
+      - BEST PING 2
+      - FALLBACK
+      - LOAD BALANCE
+    # url: 'https://www.gstatic.com/generate_204'
+    # interval: 300
+    # lazy: true
+    # timeout: 5000
+    # max-failed-times: 5
+
+  # BEST PING 1 and BEST PING 2 are used to select the fastest proxy from WAN-1 and WAN-2.
+  # This is critical for dual modem setups to ensure optimal performance.
+  - name: BEST PING 1
+    type: url-test
+    use:
+      - WAN-1
+
+  - name: BEST PING 2
+    type: url-test
+    use:
+      - WAN-2
+
+  # FALLBACK ensures traffic is routed to the next available proxy if the primary fails.
+  - name: FALLBACK
+    type: fallback
+    proxies:
+      - BEST PING 2
+      - BEST PING 1
+      - DIRECT
+    # url: 'https://www.gstatic.com/generate_204'
+    # interval: 300
+    # lazy: true
+    # timeout: 5000
+    # max-failed-times: 5
+
+  # LOAD BALANCE distributes traffic evenly across WAN-1 and WAN-2.
+  - name: LOAD BALANCE
+    type: load-balance
+    use:
+      - WAN-1
+      - WAN-2
+    strategy: consistent-hashing # or round-robin
+
+rule-providers:
+  # Ensure the YAML files exist in the specified paths.
+
+  DIRECT:
+    type: http
+    path: "./rule_provider/direct.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/direct.yaml"
+    interval: 3600
+    behavior: classical
+    
+  REJECT:
+    type: file
+    path: "./rule_provider/reject.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/reject.yaml"
+    interval: 3600
+    behavior: classical
+
+  Adult:
+    type: file
+    path: "./rule_provider/adult.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/adult.yaml"
+    interval: 3600
+    behavior: classical
+
+  Facebook:
+    type: file
+    path: "./rule_provider/facebook.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/facebook.yaml"
+    interval: 3600
+    behavior: classical
+
+  Games:
+    type: file
+    path: "./rule_provider/games.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/games.yaml"
+    interval: 3600
+    behavior: classical
+
+  Instagram:
+    type: file
+    path: "./rule_provider/instagram.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/instagram.yaml"
+    interval: 3600
+    behavior: classical
+
+  TikTok:
+    type: file
+    path: "./rule_provider/tiktok.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/tiktok.yaml"
+    interval: 3600
+    behavior: classical
+
+  Twitter:
+    type: file
+    path: "./rule_provider/twitter.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/twitter.yaml"
+    interval: 3600
+    behavior: classical
+
+  WhatsApp:
+    type: file
+    path: "./rule_provider/whatsapp.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/whatsapp.yaml"
+    interval: 3600
+    behavior: classical
+
+  YouTube:
+    type: file
+    path: "./rule_provider/youtube.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/youtube.yaml"
+    interval: 3600
+    behavior: classical
+
+rules:
+  # Block unwanted traffic using the REJECT rule.
+  - RULE-SET,REJECT,REJECT
+
+  # Direct traffic for local or priority services.
+  - RULE-SET,DIRECT,DIRECT
+  - RULE-SET,Games,DIRECT
+  - RULE-SET,WhatsApp,DIRECT
+
+  # Route adult content through SPECIAL ACCESS.
+  - RULE-SET,Adult,SPECIAL ACCESS
+
+  # Route social media and streaming traffic through GLOBAL (VPN Tunnel).
+  - RULE-SET,Facebook,GLOBAL
+  - RULE-SET,Instagram,GLOBAL
+  - RULE-SET,TikTok,GLOBAL
+  - RULE-SET,Twitter,GLOBAL
+  - RULE-SET,YouTube,GLOBAL
+
+  # Match all other traffic and route through GLOBAL.
+  - MATCH,GLOBAL

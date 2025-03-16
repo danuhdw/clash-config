@@ -1,16 +1,15 @@
-# config-dual-modem.yaml, Configuration for dual modem setup
+# config.yaml, Configuration for single modem setup
 
 # This option enables unified latency measurement for all proxies.
 # When enabled, OpenClash will measure latency for all proxies simultaneously,
-# reducing the time required for latency testing. This is useful for dual modem setups
-# where latency consistency is critical.
+# reducing the time required for latency testing.
 unified-delay: true
 
 # Clash router working mode
 # rule: rule-based packet routing
 # global: all packets will be forwarded to a single endpoint
 # direct: directly forward the packets to the Internet
-mode: rule
+mode: global
 
 # RESTful web API listening address
 # external-controller: 0.0.0.0:9090
@@ -72,23 +71,10 @@ proxy-providers:
   # - https://cp.cloudflare.com
   # - https://www.gstatic.com/generate_204
 
-  WAN-1:
-    type: file
-    path: "./proxy_provider/wan1.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com
-      interval: 300
-      timeout: 5000
-      lazy: true
-      expected-status: 204
-
-  WAN-2:
-    type: file
-    path: "./proxy_provider/wan2.yaml"
-    # url: "https://raw.githubusercontent.com/../file.yaml"
+  PROXIES:
+    type: http
+    path: "./proxy_provider/proxies.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/proxy_provider/proxies.yaml"
     interval: 3600
     health-check:
       enable: true
@@ -103,48 +89,18 @@ proxy-groups:
   # It will only check the proxies field of the proxy group,
   # and will not check the proxies of the proxy providers introduced through use.
 
-  # MANUAL SELECT allows you to manually choose between WAN-1 and WAN-2.
-  # Useful for testing or manual failover
-  - name: MANUAL SELECT
-    type: select
-    use:
-      - WAN-1
-      - WAN-2
-
-  # SPECIAL ACCESS is used for specific traffic that requires special handling,
-  # such as blocking (REJECT) or fallback to another proxy.
-  - name: SPECIAL ACCESS
-    type: select
-    proxies:
-      - REJECT
-      - BEST PING 1
-      - BEST PING 2
-      - FALLBACK
-      - LOAD BALANCE
-    # url: 'https://www.gstatic.com/generate_204'
-    # interval: 300
-    # lazy: true
-    # timeout: 5000
-    # max-failed-times: 5
-
-  # BEST PING 1 and BEST PING 2 are used to select the fastest proxy from WAN-1 and WAN-2.
+  # BEST PING are used to select the fastest proxy from Provider.
   # This is critical for dual modem setups to ensure optimal performance.
-  - name: BEST PING 1
+  - name: BEST PING
     type: url-test
     use:
-      - WAN-1
-
-  - name: BEST PING 2
-    type: url-test
-    use:
-      - WAN-2
+      - PROXIES
 
   # FALLBACK ensures traffic is routed to the next available proxy if the primary fails.
   - name: FALLBACK
     type: fallback
     proxies:
-      - BEST PING 2
-      - BEST PING 1
+      - BEST PING
       - DIRECT
     # url: 'https://www.gstatic.com/generate_204'
     # interval: 300
@@ -152,19 +108,25 @@ proxy-groups:
     # timeout: 5000
     # max-failed-times: 5
 
-  # LOAD BALANCE distributes traffic evenly across WAN-1 and WAN-2.
+  # LOAD BALANCE distributes traffic evenly across proxy.
   - name: LOAD BALANCE
     type: load-balance
     use:
-      - WAN-1
-      - WAN-2
+      - PROXIES
     strategy: consistent-hashing # or round-robin
+
+  # MANUAL SELECT allows you to manually choose proxy from Provider.
+  # Useful for testing or manual failover
+  - name: MANUAL SELECT
+    type: select
+    use:
+      - PROXIES
 
 rule-providers:
   # Ensure the YAML files exist in the specified paths.
 
   DIRECT:
-    type: http
+    type: file
     path: "./rule_provider/direct.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/direct.yaml"
     interval: 3600
@@ -237,13 +199,13 @@ rules:
   # Block unwanted traffic using the REJECT rule.
   - RULE-SET,REJECT,REJECT
 
+  # Route adult content through SPECIAL ACCESS.
+  - RULE-SET,Adult,SPECIAL ACCESS
+
   # Direct traffic for local or priority services.
   - RULE-SET,DIRECT,DIRECT
   - RULE-SET,Games,DIRECT
   - RULE-SET,WhatsApp,DIRECT
-
-  # Route adult content through SPECIAL ACCESS.
-  - RULE-SET,Adult,SPECIAL ACCESS
 
   # Route social media and streaming traffic through GLOBAL (VPN Tunnel).
   - RULE-SET,Facebook,GLOBAL
