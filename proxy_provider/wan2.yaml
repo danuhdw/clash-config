@@ -47,25 +47,3 @@ proxies:
       # path: "/override_default_path"
       headers:
         Host: id3.danupoint.my.id
-
-  # GlobalSSH
-  - name: "G-SG04"
-    <<: *common
-    password: 4fac830f-1c3c-4a5c-9ede-3ba34e9a3bbd
-    sni: tro-sg04.gproxy.pro
-    ws-opts:
-      <<: *ws_opts
-      path: "/trojan-ws"
-      headers:
-        Host: tro-sg04.gproxy.pro
-
-  # GlobalSSH
-  - name: "G-ID11"
-    <<: *common
-    password: 3e0c0e2d-f8d7-482b-9ea8-50505057bcf0
-    sni: tro-id11.gproxy.pro
-    ws-opts:
-      <<: *ws_opts
-      path: "/trojan-ws"
-      headers:
-        Host: tro-id11.gproxy.pro
