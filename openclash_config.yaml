@@ -78,7 +78,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://cp.cloudflare.com
+      url: 'https://www.gstatic.com/generate_204'
       interval: 300
       timeout: 5000
       lazy: true
@@ -142,70 +142,70 @@ rule-providers:
   # Ensure the YAML files exist in the specified paths.
 
   DIRECT:
-    type: file
+    type: http
     path: "./rule_provider/direct.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/direct.yaml"
     interval: 3600
     behavior: classical
     
   REJECT:
-    type: file
+    type: http
     path: "./rule_provider/reject.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/reject.yaml"
     interval: 3600
     behavior: classical
 
   Adult:
-    type: file
+    type: http
     path: "./rule_provider/adult.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/adult.yaml"
     interval: 3600
     behavior: classical
 
   Facebook:
-    type: file
+    type: http
     path: "./rule_provider/facebook.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/facebook.yaml"
     interval: 3600
     behavior: classical
 
   Games:
-    type: file
+    type: http
     path: "./rule_provider/games.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/games.yaml"
     interval: 3600
     behavior: classical
 
   Instagram:
-    type: file
+    type: http
     path: "./rule_provider/instagram.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/instagram.yaml"
     interval: 3600
     behavior: classical
 
   TikTok:
-    type: file
+    type: http
     path: "./rule_provider/tiktok.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/tiktok.yaml"
     interval: 3600
     behavior: classical
 
   Twitter:
-    type: file
+    type: http
     path: "./rule_provider/twitter.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/twitter.yaml"
     interval: 3600
     behavior: classical
 
   WhatsApp:
-    type: file
+    type: http
     path: "./rule_provider/whatsapp.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/whatsapp.yaml"
     interval: 3600
     behavior: classical
 
   YouTube:
-    type: file
+    type: http
     path: "./rule_provider/youtube.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/youtube.yaml"
     interval: 3600
