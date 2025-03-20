@@ -50,6 +50,7 @@ payload:
   # Marketplaces
   # Domains for popular e-commerce platforms
   # Shopee
+  - DOMAIN,api.gw.airpay.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
   - DOMAIN,seller-app.shopee.co.id
@@ -70,10 +71,6 @@ payload:
   - DOMAIN-SUFFIX,cloudflare.com
   # Datatabu
   - DOMAIN-SUFFIX,datatabu.com
-  # JKI
-  - DOMAIN-SUFFIX,slojki.com
-  # Firebase
-  - DOMAIN-KEYWORD,firebase
   # Flip
   - DOMAIN-SUFFIX,flip.id
   # Github
@@ -81,6 +78,10 @@ payload:
   # Google
   - DOMAIN,www.google.com
   - DOMAIN-SUFFIX,googleapis.com
+  # JKI
+  - DOMAIN-SUFFIX,slojki.com
+  # Mitra Shopee
+  - DOMAIN-SUFFIX,mitra.shopee.co.id
   # NetQ
   - DOMAIN-SUFFIX,netq.me
   # OSS
