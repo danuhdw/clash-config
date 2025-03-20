@@ -80,7 +80,7 @@ proxy-providers:
     health-check:
       enable: true
       url: "https://cp.cloudflare.com"
-      interval: 300
+      interval: 60
       timeout: 5000
       lazy: true
       expected-status: 204
@@ -93,7 +93,7 @@ proxy-providers:
     health-check:
       enable: true
       url: "https://cp.cloudflare.com"
-      interval: 300
+      interval: 60
       timeout: 5000
       lazy: true
       expected-status: 204
@@ -122,7 +122,7 @@ proxy-groups:
       - FALLBACK
       - LOAD BALANCE
     # url: "https://cp.cloudflare.com"
-    # interval: 300
+    # interval: 60
     # lazy: true
     # timeout: 5000
     # max-failed-times: 5
@@ -147,7 +147,7 @@ proxy-groups:
       - BEST PING 1
       - DIRECT
     # url: "https://cp.cloudflare.com"
-    # interval: 300
+    # interval: 60
     # lazy: true
     # timeout: 5000
     # max-failed-times: 5
