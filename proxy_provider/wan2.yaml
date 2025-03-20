@@ -3,7 +3,7 @@ common: &common
   type: trojan
   server: 172.67.5.14
   port: 443
-  password: home # Default password, can be overridden in each proxy
+  password: PASSWORD # Default password, can be overridden in each proxy
   udp: true
   skip-cert-verify: true
   network: ws
