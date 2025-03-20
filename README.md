@@ -16,24 +16,25 @@ This repository contains OpenClash configurations for both **dual modem** and **
 ## **File Structure**
 ```
 openclash-config/
-├── config-dual-modem.yaml        # Configuration for dual modem setups
-├── config.yaml                   # Configuration for single modem setups
-├── proxy_provider/               # Proxy provider files
-│   ├── proxies.yaml              # Proxy list for single modem
-│   ├── wan1.yaml                 # Proxy list for WAN-1
-│   └── wan2.yaml                 # Proxy list for WAN-2
-├── rule_provider/                # Rule provider files
-│   ├── adult.yaml                # Rules for adult content
-│   ├── direct.yaml               # Rules for direct traffic
-│   ├── facebook.yaml             # Rules for Facebook
-│   ├── games.yaml                # Rules for gaming traffic
-│   ├── instagram.yaml            # Rules for Instagram
-│   ├── reject.yaml               # Rules for blocking traffic
-│   ├── tiktok.yaml               # Rules for TikTok
-│   ├── twitter.yaml              # Rules for Twitter
-│   ├── whatsapp.yaml             # Rules for WhatsApp
-│   └── youtube.yaml              # Rules for YouTube
-└── README.md                     # This file
+├── proxy_provider/                     # Proxy provider files
+│   ├── proxies.yaml                    # Proxy list for single modem
+│   ├── wan1.yaml                       # Proxy list for WAN-1
+│   └── wan2.yaml                       # Proxy list for WAN-2
+├── rule_provider/                      # Rule provider files
+│   ├── adult.yaml                      # Rules for adult content
+│   ├── direct.yaml                     # Rules for direct traffic
+│   ├── facebook.yaml                   # Rules for Facebook
+│   ├── games.yaml                      # Rules for gaming traffic
+│   ├── instagram.yaml                  # Rules for Instagram
+│   ├── reject.yaml                     # Rules for blocking traffic
+│   ├── tiktok.yaml                     # Rules for TikTok
+│   ├── twitter.yaml                    # Rules for Twitter
+│   ├── whatsapp.yaml                   # Rules for WhatsApp
+│   └── youtube.yaml                    # Rules for YouTube
+├── cfa_or_cmfa_config.yaml             # Configuration for CFA / CMFA
+├── openclash_config.yaml               # Configuration for single modem setups
+├── openclash_dual_modem_config.yaml    # Configuration for dual modem setups
+└── README.md                           # This file
 ```
 
 ---
