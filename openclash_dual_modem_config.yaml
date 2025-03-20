@@ -79,7 +79,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://cp.cloudflare.com
+      url: "https://cp.cloudflare.com"
       interval: 300
       timeout: 5000
       lazy: true
@@ -92,7 +92,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://cp.cloudflare.com
+      url: "https://cp.cloudflare.com"
       interval: 300
       timeout: 5000
       lazy: true
@@ -121,7 +121,7 @@ proxy-groups:
       - BEST PING 2
       - FALLBACK
       - LOAD BALANCE
-    # url: 'https://www.gstatic.com/generate_204'
+    # url: "https://cp.cloudflare.com"
     # interval: 300
     # lazy: true
     # timeout: 5000
@@ -146,7 +146,7 @@ proxy-groups:
       - BEST PING 2
       - BEST PING 1
       - DIRECT
-    # url: 'https://www.gstatic.com/generate_204'
+    # url: "https://cp.cloudflare.com"
     # interval: 300
     # lazy: true
     # timeout: 5000

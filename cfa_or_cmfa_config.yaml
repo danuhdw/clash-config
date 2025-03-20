@@ -78,7 +78,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: 'https://www.gstatic.com/generate_204'
+      url: "https://cp.cloudflare.com"
       interval: 300
       timeout: 5000
       lazy: true
@@ -102,7 +102,7 @@ proxy-groups:
     proxies:
       - BEST PING
       - DIRECT
-    # url: 'https://www.gstatic.com/generate_204'
+    # url: "https://cp.cloudflare.com"
     # interval: 300
     # lazy: true
     # timeout: 5000
