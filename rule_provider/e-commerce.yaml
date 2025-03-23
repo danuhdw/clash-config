@@ -1,37 +1,54 @@
 payload:
   # Blibli
+  # *.blibli.com
   - DOMAIN,account.blibli.com
+  - DOMAIN,bwa.blibli.com
+  - DOMAIN,www.blibli.com
+  # *.bliblitiketrewards.com
+  - DOMAIN,static-src.bliblitiketrewards.com
+  # *.gw-dv.vip
   - DOMAIN,anycast2-blibli.gw-dv.vip
   - DOMAIN,blibli.gw-dv.vip
-  - DOMAIN,bwa.blibli.com
-  - DOMAIN,static-src.bliblitiketrewards.com
-  - DOMAIN,www.blibli.com
 
   # Lazada
+  # *.alibaba.com
+  - DOMAIN,umlazada.alibaba.com
+  # *.alicdn.com
+  - DOMAIN,laz-dorangesource.alicdn.com
+  # *.aliyuncs.com
+  - DOMAIN,lazpay-fe-kyc-module-file.oss-ap-southeast-1.aliyuncs.com
+  # *.lazada.co.id
   - DOMAIN,acs-m.lazada.co.id
-  - DOMAIN,amdc.lazada.com
   - DOMAIN,ifs.lazada.co.id
-  - DOMAIN,img.lazcdn.com
+  - DOMAIN,pages.lazada.co.id
+  - DOMAIN,www.lazada.co.id
+  # *.lazada.com
+  - DOMAIN,amdc.lazada.com
   - DOMAIN,internal-feedback.lazada.com
   - DOMAIN,iterator.lazada.com
   - DOMAIN,lab-js-abtest.lazada.com
-  - DOMAIN,laz-dorangesource.alicdn.com
-  - DOMAIN,lazpay-fe-kyc-module-file.oss-ap-southeast-1.aliyuncs.com
-  - DOMAIN,pages.lazada.co.id
-  - DOMAIN,umlazada.alibaba.com
-  - DOMAIN,www.lazada.co.id
+  # *.lazcdn.com
+  - DOMAIN,img.lazcdn.com
+  - DOMAIN,img2.lazcdn.com
 
   # Shopee
+  # *.airpay.co.id
   - DOMAIN,api.gw.airpay.co.id
+  # *.shopee.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
   - DOMAIN,seller-app.shopee.co.id
-  - DOMAIN-SUFFIX,shopee.io
-  - DOMAIN-SUFFIX,shopeemobile.com
+  # *.shopee.io
+  # - DOMAIN-SUFFIX,shopee.io
+  # *.shopeemobile.com
+  # - DOMAIN-SUFFIX,shopeemobile.com
 
   # Tokopedia
-  - DOMAIN,cloudpush.tokopedia.com
-  - DOMAIN,ecs7.tokopedia.net
+  # *.gojekapi.com
   - DOMAIN,mqtt-tokopedia-customer-prd.gojekapi.com
+  # *.tokopedia.com
+  - DOMAIN,cloudpush.tokopedia.com
   - DOMAIN,gql.tokopedia.com
   - DOMAIN,hub.tokopedia.com
+  # *.tokopedia.net
+  - DOMAIN,ecs7.tokopedia.net
