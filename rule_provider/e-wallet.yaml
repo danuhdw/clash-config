@@ -48,3 +48,9 @@ payload:
   - DOMAIN,helpcenter.ovo.id
   - DOMAIN,images-loyalty.ovo.id
   - DOMAIN,static.ovo.id
+
+  # ShopeePay
+  # *.shopee.co.id
+  - DOMAIN,shopeepay.api.shopee.co.id
+  # *.shopee.sg
+  - DOMAIN,pay.shopee.sg
