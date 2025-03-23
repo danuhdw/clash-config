@@ -49,6 +49,10 @@ payload:
   - DOMAIN-SUFFIX,plndigital.id
   # Ujang Gatrik
   - DOMAIN,siujang.esdm.go.id
+  
+  # Remote Access
+  # Tailscale
+  - DOMAIN,tailscale.com
   # Zerotier
   - DOMAIN-SUFFIX,zerotier.com
   - DST-PORT,43899
