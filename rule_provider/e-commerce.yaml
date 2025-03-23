@@ -38,9 +38,12 @@ payload:
   - DOMAIN,shopee.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
+  - DOMAIN,df.infra.sz.shopee.co.id
   - DOMAIN,dp.tracking.shopee.co.id
   - DOMAIN,endpoint.mms.shopee.co.id
   - DOMAIN,games.shopee.co.id
+  - DOMAIN,games-dailycheckin.shopee.co.id
+  - DOMAIN,idgame.shopee.co.id
   - DOMAIN,live.shopee.co.id
   - DOMAIN,live-apm.shopee.co.id
   - DOMAIN,livetech.shopee.co.id
@@ -52,14 +55,20 @@ payload:
   - DOMAIN,seller-app.shopee.co.id
   - DOMAIN,sv.shopee.co.id
   - DOMAIN,ubt.tracking.shopee.co.id
+  # *.shopee.com
+  - DOMAIN,dem.shopee.com
   # *.shopee.io
   - DOMAIN,ccms.shopee.io
+  - DOMAIN,dem.exp.shopee.io
   # *.shopee.sg
+  - DOMAIN,df.infra.test.shopee.sg
   - DOMAIN,iv-datatracker.spx.shopee.sg
   - DOMAIN,seller.shopee.sg
   # *.shopeemobile.com
+  - DOMAIN,c-api-bit.shopeemobile.com
   - DOMAIN,ccms.dr-wan.shopeemobile.com
   - DOMAIN,deo.shopeemobile.com
+  - DOMAIN,mp-data-sg-sg10-27.dr-wan.shopeemobile.com
   - DOMAIN,mp-others-sg7-sg8-156.dr-wan.shopeemobile.com
   - DOMAIN,patronus.idata.shopeemobile.com
   - DOMAIN,remote-config.gslb.sgw.shopeemobile.com
