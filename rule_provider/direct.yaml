@@ -33,23 +33,6 @@ payload:
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
 
-  # Mobile Banking (M-Banking)
-  # Domains for mobile banking applications
-  # BRImo
-  - DOMAIN,brimo.bri.co.id
-  # Jago
-  - DOMAIN,api.jago.com
-  - DOMAIN,assets.jago.com
-  - DOMAIN,jago-realtime.ably.io
-  - DOMAIN,jago-rest.ably.io
-  - DOMAIN,jago-c-fallback.ably-realtime.com
-  # Neo Bank
-  - DOMAIN-SUFFIX,bankneo.co.id
-  # SeaBank
-  - DOMAIN-SUFFIX,seabank.co.id
-  # SuperBank
-  - DOMAIN,api.super-id.net
-
   # Marketplaces
   # Domains for popular e-commerce platforms
   # Shopee
