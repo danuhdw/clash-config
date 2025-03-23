@@ -146,6 +146,27 @@ rule-providers:
     interval: 3600
     behavior: classical
 
+  E-Banking:
+    type: http
+    path: "./rule_provider/e-banking.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/e-banking.yaml"
+    interval: 3600
+    behavior: classical
+
+  E-Commerce:
+    type: http
+    path: "./rule_provider/e-commerce.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/e-commerce.yaml"
+    interval: 3600
+    behavior: classical
+
+  E-Wallet:
+    type: http
+    path: "./rule_provider/e-wallet.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/e-wallet.yaml"
+    interval: 3600
+    behavior: classical
+
   Facebook:
     type: http
     path: "./rule_provider/facebook.yaml"
@@ -196,23 +217,30 @@ rule-providers:
     behavior: classical
 
 rules:
-  # Block unwanted traffic using the REJECT rule.
+  # Reject rules for blocked domains (e.g., ads, trackers, malicious sites)
   - RULE-SET,REJECT,REJECT
 
-  # Route adult content.
-  - RULE-SET,Adult,REJECT
-
-  # Direct traffic for local or priority services.
+  # Direct rules for local or trusted traffic (no proxy)
   - RULE-SET,DIRECT,DIRECT
+
+  # Direct rules for financial services (e-banking and e-wallet)
+  - RULE-SET,E-Banking,DIRECT
+  - RULE-SET,E-Wallet,DIRECT
+
+  # Direct rules for gaming and messaging apps
   - RULE-SET,Games,DIRECT
   - RULE-SET,WhatsApp,DIRECT
 
-  # Route social media and streaming traffic through GLOBAL (VPN Tunnel).
+  # Special access rules for adult content (custom proxy or special handling)
+  - RULE-SET,Adult,SPECIAL ACCESS
+
+  # Global rules for e-commerce and social media platforms (use proxy)
+  - RULE-SET,E-Commerce,GLOBAL
   - RULE-SET,Facebook,GLOBAL
   - RULE-SET,Instagram,GLOBAL
   - RULE-SET,TikTok,GLOBAL
   - RULE-SET,Twitter,GLOBAL
   - RULE-SET,YouTube,GLOBAL
 
-  # Match all other traffic and route through GLOBAL.
+  # Default rule: route all unmatched traffic through the global proxy
   - MATCH,GLOBAL
