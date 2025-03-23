@@ -37,11 +37,17 @@ payload:
   # *.shopee.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
+  - DOMAIN,dp.tracking.shopee.co.id
+  - DOMAIN,endpoint.mms.shopee.co.id
+  - DOMAIN,games.shopee.co.id
+  - DOMAIN,mall.shopee.co.id
   - DOMAIN,seller-app.shopee.co.id
+  - DOMAIN,ubt.tracking.shopee.co.id
   # *.shopee.io
-  # - DOMAIN-SUFFIX,shopee.io
+  - DOMAIN,ccms.shopee.io
   # *.shopeemobile.com
-  # - DOMAIN-SUFFIX,shopeemobile.com
+  - DOMAIN,patronus.idata.shopeemobile.com
+  - DOMAIN,remote-config.gslb.sgw.shopeemobile.com
 
   # Tokopedia
   # *.gojekapi.com
