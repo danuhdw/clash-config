@@ -7,6 +7,20 @@ payload:
   - DOMAIN,static-src.bliblitiketrewards.com
   - DOMAIN,www.blibli.com
 
+  # Lazada
+  - DOMAIN,acs-m.lazada.co.id
+  - DOMAIN,amdc.lazada.com
+  - DOMAIN,ifs.lazada.co.id
+  - DOMAIN,img.lazcdn.com
+  - DOMAIN,internal-feedback.lazada.com
+  - DOMAIN,iterator.lazada.com
+  - DOMAIN,lab-js-abtest.lazada.com
+  - DOMAIN,laz-dorangesource.alicdn.com
+  - DOMAIN,lazpay-fe-kyc-module-file.oss-ap-southeast-1.aliyuncs.com
+  - DOMAIN,pages.lazada.co.id
+  - DOMAIN,umlazada.alibaba.com
+  - DOMAIN,www.lazada.co.id
+
   # Shopee
   - DOMAIN,api.gw.airpay.co.id
   - DOMAIN,api.shopee.co.id
