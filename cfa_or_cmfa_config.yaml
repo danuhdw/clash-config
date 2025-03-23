@@ -99,9 +99,8 @@ proxy-groups:
   # FALLBACK ensures traffic is routed to the next available proxy if the primary fails.
   - name: FALLBACK
     type: fallback
-    proxies:
-      - BEST PING
-      - DIRECT
+    use:
+      - PROXIES
     # url: "https://cp.cloudflare.com"
     # interval: 60
     # lazy: true
