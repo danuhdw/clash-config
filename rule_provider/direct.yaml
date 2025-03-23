@@ -53,6 +53,7 @@ payload:
   # Remote Access
   # Tailscale
   - DOMAIN-SUFFIX,tailscale.com
+  - DOMAIN-SUFFIX,ts.net
   # Zerotier
   - DOMAIN-SUFFIX,zerotier.com
   - DST-PORT,43899
