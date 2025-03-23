@@ -1,5 +1,12 @@
 payload:
-  # Shopee - E-commerce Platform
+  # Blibli
+  - DOMAIN,account.blibli.com
+  - DOMAIN,blibli.gw-dv.vip
+  - DOMAIN,bwa.blibli.com
+  - DOMAIN,static-src.bliblitiketrewards.com
+  - DOMAIN,www.blibli.com
+
+  # Shopee
   - DOMAIN,api.gw.airpay.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
@@ -7,7 +14,8 @@ payload:
   - DOMAIN-SUFFIX,shopee.io
   - DOMAIN-SUFFIX,shopeemobile.com
 
-  # Tokopedia - E-commerce Platform
+  # Tokopedia
+  - DOMAIN,cloudpush.tokopedia.com
+  - DOMAIN,ecs7.tokopedia.net
   - DOMAIN,gql.tokopedia.com
   - DOMAIN,hub.tokopedia.com
-  - DOMAIN,ecs7.tokopedia.net
