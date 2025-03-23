@@ -55,6 +55,7 @@ payload:
   - DOMAIN,seller-app.shopee.co.id
   - DOMAIN,sv.shopee.co.id
   - DOMAIN,ubt.tracking.shopee.co.id
+  - DOMAIN,ubta.tracking.shopee.co.id
   # *.shopee.com
   - DOMAIN,dem.shopee.com
   # *.shopee.io
@@ -63,6 +64,7 @@ payload:
   # *.shopee.sg
   - DOMAIN,df.infra.test.shopee.sg
   - DOMAIN,iv-datatracker.spx.shopee.sg
+  - DOMAIN,pay.shopee.sg
   - DOMAIN,seller.shopee.sg
   # *.shopeemobile.com
   - DOMAIN,c-api-bit.shopeemobile.com
@@ -73,6 +75,8 @@ payload:
   - DOMAIN,patronus.idata.shopeemobile.com
   - DOMAIN,remote-config.gslb.sgw.shopeemobile.com
   - DOMAIN,securiy-sg7-sg8-12.dr-wan.shopeemobile.com
+  # *.txlivecdn.com
+  - DOMAIN,play-tx-src.livestream.shopee.co.id.txlivecdn.com
 
   # Tokopedia
   # *.gojekapi.com
