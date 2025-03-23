@@ -29,4 +29,8 @@ payload:
   - DOMAIN,cdn.linkaja.com
 
   # OVO
-  - DOMAIN,ovo.id
+  - DOMAIN,agw.ovo.id
+  - DOMAIN,api.ovo.id
+  - DOMAIN,finserve.ovo.id
+  - DOMAIN,images-loyalty.ovo.id
+  - DOMAIN,static.ovo.id
