@@ -20,7 +20,6 @@ payload:
   - DOMAIN,gopay-raccoon.gojekapi.com
   - DOMAIN,i.gojekapi.com
   - DOMAIN,mqtt-customer-prd.gojekapi.com
-
   # *.gopayapi.com
   - DOMAIN,customer.gopayapi.com
 
@@ -31,6 +30,9 @@ payload:
   # OVO
   - DOMAIN,agw.ovo.id
   - DOMAIN,api.ovo.id
+  - DOMAIN,api.cp1.ovo.id
+  - DOMAIN,cdn01.ovo.id
   - DOMAIN,finserve.ovo.id
+  - DOMAIN,helpcenter.ovo.id
   - DOMAIN,images-loyalty.ovo.id
   - DOMAIN,static.ovo.id
