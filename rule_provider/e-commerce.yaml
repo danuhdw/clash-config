@@ -42,8 +42,6 @@ payload:
   - DOMAIN,img2.lazcdn.com
 
   # Shopee
-  # *.airpay.co.id
-  - DOMAIN,api.gw.airpay.co.id
   # *.shopee.co.id
   - DOMAIN,shopee.co.id
   - DOMAIN,api.shopee.co.id
