@@ -55,10 +55,12 @@ payload:
   # *.shopee.io
   - DOMAIN,ccms.shopee.io
   # *.shopee.sg
-  - DOMAIN, iv-datatracker.spx.shopee.sg
+  - DOMAIN,iv-datatracker.spx.shopee.sg
+  - DOMAIN,seller.shopee.sg
   # *.shopeemobile.com
   - DOMAIN,ccms.dr-wan.shopeemobile.com
   - DOMAIN,deo.shopeemobile.com
+  - DOMAIN,mp-others-sg7-sg8-156.dr-wan.shopeemobile.com
   - DOMAIN,patronus.idata.shopeemobile.com
   - DOMAIN,remote-config.gslb.sgw.shopeemobile.com
   - DOMAIN,securiy-sg7-sg8-12.dr-wan.shopeemobile.com
