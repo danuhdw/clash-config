@@ -50,6 +50,8 @@ payload:
   - DOMAIN,static.ovo.id
 
   # ShopeePay
+  # *.airpay.co.id
+  - DOMAIN,api.gw.airpay.co.id
   # *.shopee.co.id
   - DOMAIN,shopeepay.api.shopee.co.id
   # *.shopee.sg
