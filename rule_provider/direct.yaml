@@ -2,6 +2,9 @@ payload:
   # Local Network
   # IP range for local network access
   - IP-CIDR,192.168.1.1/24
+  # DNS
+  - DST-PORT,53
+  - DST-PORT,853
 
   # Internet Service Providers (ISP)
   # Domains related to ISP mobile apps or services
@@ -38,6 +41,8 @@ payload:
   - DOMAIN-SUFFIX,mitra.shopee.co.id
   # NetQ
   - DOMAIN-SUFFIX,netq.me
+  # OpenWrt
+  - DOMAIN,downloads.openwrt.org
   # OSS
   - DOMAIN-SUFFIX,oss.go.id
   # Pegadaian
