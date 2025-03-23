@@ -3,24 +3,6 @@ payload:
   # IP range for local network access
   - IP-CIDR,192.168.1.1/24
 
-  # E-Wallet Services
-  # Domains for popular e-wallet platforms in Indonesia
-  # DANA
-  - DOMAIN,cdn.marmot-cloud.com
-  - DOMAIN,cdn-dana.marmot-cloud.com
-  - DOMAIN,dana.ingest.threatcast.guardsquare.com
-  - DOMAIN,gw-dana.ebuckler.com
-  - DOMAIN,sdk.split.io
-  - DOMAIN-SUFFIX,m.dana.id
-  - DOMAIN-SUFFIX,saas.dana.id
-  # GoPay
-  - DOMAIN-SUFFIX,gojekapi.com
-  - DOMAIN-SUFFIX,gopayapi.com
-  # LinkAja
-  - DOMAIN-SUFFIX,linkaja.com
-  # OVO
-  - DOMAIN-SUFFIX,ovo.id
-
   # Internet Service Providers (ISP)
   # Domains related to ISP mobile apps or services
   # AXISnet
@@ -32,20 +14,6 @@ payload:
   - DOMAIN,api.byu.id
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
-
-  # Marketplaces
-  # Domains for popular e-commerce platforms
-  # Shopee
-  - DOMAIN,api.gw.airpay.co.id
-  - DOMAIN,api.shopee.co.id
-  - DOMAIN,cf.shopee.co.id
-  - DOMAIN,seller-app.shopee.co.id
-  - DOMAIN-SUFFIX,shopee.io
-  - DOMAIN-SUFFIX,shopeemobile.com
-  # Tokopedia
-  - DOMAIN,gql.tokopedia.com
-  - DOMAIN,hub.tokopedia.com
-  - DOMAIN,ecs7.tokopedia.net
 
   # Miscellaneous Services
   # Various other services and platforms
