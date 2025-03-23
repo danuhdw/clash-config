@@ -15,11 +15,18 @@ payload:
   - DOMAIN,sdk.split.io
 
   # GoPay
-  - DOMAIN-SUFFIX,gojekapi.com
-  - DOMAIN-SUFFIX,gopayapi.com
+  # *.gojekapi.com
+  - DOMAIN,api.gojekapi.com
+  - DOMAIN,gopay-raccoon.gojekapi.com
+  - DOMAIN,i.gojekapi.com
+  - DOMAIN,mqtt-customer-prd.gojekapi.com
+
+  # *.gopayapi.com
+  - DOMAIN,customer.gopayapi.com
 
   # LinkAja
-  - DOMAIN-SUFFIX,linkaja.com
+  - DOMAIN,avengers.linkaja.com
+  - DOMAIN,cdn.linkaja.com
 
   # OVO
-  - DOMAIN-SUFFIX,ovo.id
+  - DOMAIN,ovo.id
