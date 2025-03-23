@@ -3,6 +3,7 @@ payload:
   # IP range for local network access
   - IP-CIDR,192.168.1.1/24
   # DNS
+  - DOMAIN,dns.google
   - DST-PORT,53
   - DST-PORT,853
 
