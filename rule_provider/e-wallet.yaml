@@ -1,0 +1,19 @@
+payload:
+  # DANA - Digital Wallet by DANA Indonesia
+  - DOMAIN,cdn.marmot-cloud.com
+  - DOMAIN,cdn-dana.marmot-cloud.com
+  - DOMAIN,dana.ingest.threatcast.guardsquare.com
+  - DOMAIN,gw-dana.ebuckler.com
+  - DOMAIN,sdk.split.io
+  - DOMAIN-SUFFIX,m.dana.id
+  - DOMAIN-SUFFIX,saas.dana.id
+
+  # GoPay - Digital Wallet by Gojek
+  - DOMAIN-SUFFIX,gojekapi.com
+  - DOMAIN-SUFFIX,gopayapi.com
+
+  # LinkAja - Digital Wallet by LinkAja
+  - DOMAIN-SUFFIX,linkaja.com
+
+  # OVO - Digital Wallet by OVO
+  - DOMAIN-SUFFIX,ovo.id
