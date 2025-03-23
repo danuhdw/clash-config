@@ -1,6 +1,7 @@
 payload:
   # Blibli
   - DOMAIN,account.blibli.com
+  - DOMAIN,anycast2-blibli.gw-dv.vip
   - DOMAIN,blibli.gw-dv.vip
   - DOMAIN,bwa.blibli.com
   - DOMAIN,static-src.bliblitiketrewards.com
