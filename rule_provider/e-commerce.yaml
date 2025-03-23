@@ -4,6 +4,8 @@ payload:
   - DOMAIN,account.blibli.com
   - DOMAIN,bwa.blibli.com
   - DOMAIN,www.blibli.com
+  # *.bliblitiket.com
+  - DOMAIN,account.bliblitiket.com
   # *.bliblitiketrewards.com
   - DOMAIN,static-src.bliblitiketrewards.com
   # *.crwdcntrl.net
