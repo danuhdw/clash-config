@@ -1,0 +1,13 @@
+payload:
+  # Shopee - E-commerce Platform
+  - DOMAIN,api.gw.airpay.co.id
+  - DOMAIN,api.shopee.co.id
+  - DOMAIN,cf.shopee.co.id
+  - DOMAIN,seller-app.shopee.co.id
+  - DOMAIN-SUFFIX,shopee.io
+  - DOMAIN-SUFFIX,shopeemobile.com
+
+  # Tokopedia - E-commerce Platform
+  - DOMAIN,gql.tokopedia.com
+  - DOMAIN,hub.tokopedia.com
+  - DOMAIN,ecs7.tokopedia.net
