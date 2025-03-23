@@ -18,5 +18,6 @@ payload:
   # Tokopedia
   - DOMAIN,cloudpush.tokopedia.com
   - DOMAIN,ecs7.tokopedia.net
+  - DOMAIN,mqtt-tokopedia-customer-prd.gojekapi.com
   - DOMAIN,gql.tokopedia.com
   - DOMAIN,hub.tokopedia.com
