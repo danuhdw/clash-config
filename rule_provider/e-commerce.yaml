@@ -35,19 +35,33 @@ payload:
   # *.airpay.co.id
   - DOMAIN,api.gw.airpay.co.id
   # *.shopee.co.id
+  - DOMAIN,shopee.co.id
   - DOMAIN,api.shopee.co.id
   - DOMAIN,cf.shopee.co.id
   - DOMAIN,dp.tracking.shopee.co.id
   - DOMAIN,endpoint.mms.shopee.co.id
   - DOMAIN,games.shopee.co.id
+  - DOMAIN,live.shopee.co.id
+  - DOMAIN,live-apm.shopee.co.id
+  - DOMAIN,livetech.shopee.co.id
+  - DOMAIN,log-collector.shopee.co.id
   - DOMAIN,mall.shopee.co.id
+  - DOMAIN,msdk.shopee.co.id
+  - DOMAIN,play-spe.livestream.shopee.co.id
+  - DOMAIN,play-tx-src.livestream.shopee.co.id
   - DOMAIN,seller-app.shopee.co.id
+  - DOMAIN,sv.shopee.co.id
   - DOMAIN,ubt.tracking.shopee.co.id
   # *.shopee.io
   - DOMAIN,ccms.shopee.io
+  # *.shopee.sg
+  - DOMAIN, iv-datatracker.spx.shopee.sg
   # *.shopeemobile.com
+  - DOMAIN,ccms.dr-wan.shopeemobile.com
+  - DOMAIN,deo.shopeemobile.com
   - DOMAIN,patronus.idata.shopeemobile.com
   - DOMAIN,remote-config.gslb.sgw.shopeemobile.com
+  - DOMAIN,securiy-sg7-sg8-12.dr-wan.shopeemobile.com
 
   # Tokopedia
   # *.gojekapi.com
