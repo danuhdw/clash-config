@@ -4,6 +4,7 @@ payload:
   - IP-CIDR,192.168.1.1/24
   # DNS
   - DOMAIN,dns.google
+  - DOMAIN-SUFFIX,cloudflare-dns.com
   - DST-PORT,53
   - DST-PORT,853
 
