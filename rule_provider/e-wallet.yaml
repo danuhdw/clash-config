@@ -9,7 +9,9 @@ payload:
   # *.alipayobjects.com
   - DOMAIN,gw.alipayobjects.com
   # *.dana.id
+  - DOMAIN,a.m.dana.id
   - DOMAIN,m.dana.id
+  - DOMAIN,mgs-gw.m.dana.id
   - DOMAIN,saas.dana.id
   # *.ebuckler.com
   - DOMAIN,gw-dana.ebuckler.com
