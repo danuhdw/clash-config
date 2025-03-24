@@ -58,3 +58,9 @@ payload:
   - DOMAIN,shopeepay.api.shopee.co.id
   # *.shopee.sg
   - DOMAIN,pay.shopee.sg
+
+  # SPayLater
+  # *.scredit.sg
+  - DOMAIN,cdn.scredit.sg
+  # *.shopeekredit.co.id
+  - DOMAIN,promotion.shopeekredit.co.id
