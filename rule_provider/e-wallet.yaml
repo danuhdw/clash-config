@@ -11,12 +11,14 @@ payload:
   # *.dana.id
   - DOMAIN,a.m.dana.id
   - DOMAIN,m.dana.id
+  - DOMAIN,mas-log1.saas.dana.id
   - DOMAIN,mgs-gw.m.dana.id
   - DOMAIN,saas.dana.id
   # *.ebuckler.com
   - DOMAIN,gw-dana.ebuckler.com
   # *.guardsquare.com
   - DOMAIN,dana.ingest.threatcast.guardsquare.com
+  - DOMAIN,dana.threatcast.guardsquare.com
   # *.marmot-cloud.com
   - DOMAIN,cdn.marmot-cloud.com
   - DOMAIN,cdn-dana.marmot-cloud.com
