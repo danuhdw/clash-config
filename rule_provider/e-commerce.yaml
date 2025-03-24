@@ -45,6 +45,7 @@ payload:
   # *.shopee.co.id
   - DOMAIN,shopee.co.id
   - DOMAIN,api.shopee.co.id
+  - DOMAIN,apm.tracking.shopee.co.id
   - DOMAIN,cf.shopee.co.id
   - DOMAIN,df.infra.sz.shopee.co.id
   - DOMAIN,dp.tracking.shopee.co.id
@@ -69,6 +70,7 @@ payload:
   # *.shopee.io
   - DOMAIN,ccms.shopee.io
   - DOMAIN,dem.exp.shopee.io
+  - DOMAIN,dem.test.shopee.io
   # *.shopee.sg
   - DOMAIN,df.infra.test.shopee.sg
   - DOMAIN,iv-datatracker.spx.shopee.sg
