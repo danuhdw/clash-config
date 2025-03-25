@@ -145,13 +145,6 @@ rule-providers:
     interval: 3600
     behavior: classical
 
-  E-Banking:
-    type: http
-    path: "./rule_provider/e-banking.yaml"
-    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/e-banking.yaml"
-    interval: 3600
-    behavior: classical
-
   E-Commerce:
     type: http
     path: "./rule_provider/e-commerce.yaml"
@@ -170,6 +163,13 @@ rule-providers:
     type: http
     path: "./rule_provider/facebook.yaml"
     url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/facebook.yaml"
+    interval: 3600
+    behavior: classical
+
+  Finance:
+    type: http
+    path: "./rule_provider/finance.yaml"
+    url: "https://raw.githubusercontent.com/danuhdw/openclash-config/refs/heads/main/rule_provider/finance.yaml"
     interval: 3600
     behavior: classical
 
@@ -222,8 +222,8 @@ rules:
   # Direct rules for local or trusted traffic (no proxy)
   - RULE-SET,DIRECT,DIRECT
 
-  # Direct rules for financial services (e-banking and e-wallet)
-  - RULE-SET,E-Banking,DIRECT
+  # Direct rules for financial services (Finance and e-wallet)
+  - RULE-SET,Finance,DIRECT
   - RULE-SET,E-Wallet,DIRECT
 
   # Direct rules for gaming and messaging apps
