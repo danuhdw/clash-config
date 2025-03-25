@@ -2,11 +2,15 @@ payload:
   # Local Network
   # IP range for local network access
   - IP-CIDR,192.168.1.1/24
+
   # DNS
   - DOMAIN,dns.google
   - DOMAIN-SUFFIX,cloudflare-dns.com
   - DST-PORT,53
   - DST-PORT,853
+
+  # CDN
+  - DOMAIN-SUFFIX,s3.amazonaws.com
 
   # Internet Service Providers (ISP)
   # Domains related to ISP mobile apps or services
