@@ -1,66 +1,61 @@
 payload:
   # DANA
-  # *.alipay-eco.com
-  - DOMAIN,miniprogram.alipay-eco.com
-  # *.alipay.com
-  - DOMAIN,imdap-sea.alipay.com
-  - DOMAIN,imgs-ac.alipay.com
-  - DOMAIN,imgs-id.alipay.com
-  # *.alipayobjects.com
-  - DOMAIN,gw.alipayobjects.com
   # *.dana.id
-  - DOMAIN,a.m.dana.id
-  - DOMAIN,m.dana.id
-  - DOMAIN,mas-log1.saas.dana.id
-  - DOMAIN,mgs-gw.m.dana.id
-  - DOMAIN,saas.dana.id
-  # *.ebuckler.com
-  - DOMAIN,gw-dana.ebuckler.com
-  # *.guardsquare.com
-  - DOMAIN,dana.ingest.threatcast.guardsquare.com
-  - DOMAIN,dana.threatcast.guardsquare.com
-  # *.marmot-cloud.com
-  - DOMAIN,cdn.marmot-cloud.com
-  - DOMAIN,cdn-dana.marmot-cloud.com
-  # *.signalfx.com
-  - DOMAIN,rum-ingest.us1.signalfx.com
-  # *.split.io
-  - DOMAIN,auth.split.io
-  - DOMAIN,sdk.split.io
+  - DOMAIN-SUFFIX,dana.id
 
   # GoPay
-  # *.gojekapi.com
-  - DOMAIN,api.gojekapi.com
-  - DOMAIN,gopay-raccoon.gojekapi.com
-  - DOMAIN,i.gojekapi.com
-  - DOMAIN,mqtt-customer-prd.gojekapi.com
   # *.gopayapi.com
-  - DOMAIN,customer.gopayapi.com
+  - DOMAIN-SUFFIX,gopayapi.com
 
   # LinkAja
-  - DOMAIN,avengers.linkaja.com
-  - DOMAIN,cdn.linkaja.com
+  - DOMAIN-SUFFIX,linkaja.com
 
   # OVO
-  - DOMAIN,agw.ovo.id
-  - DOMAIN,api.ovo.id
-  - DOMAIN,api.cp1.ovo.id
-  - DOMAIN,cdn01.ovo.id
-  - DOMAIN,finserve.ovo.id
-  - DOMAIN,helpcenter.ovo.id
-  - DOMAIN,images-loyalty.ovo.id
-  - DOMAIN,static.ovo.id
+  - DOMAIN-SUFFIX,ovo.id
 
   # ShopeePay
-  # *.airpay.co.id
-  - DOMAIN,api.gw.airpay.co.id
   # *.shopee.co.id
   - DOMAIN,shopeepay.api.shopee.co.id
   # *.shopee.sg
   - DOMAIN,pay.shopee.sg
 
-  # SPayLater
-  # *.scredit.sg
+
+  # Miscellaneous
+  # *.airpay.co.id | used by: ShopeePay
+  - DOMAIN,api.gw.airpay.co.id
+  # *.alipay-eco.com | used by: DANA
+  - DOMAIN,miniprogram.alipay-eco.com
+  # *.alicdn.com | used by: DANA
+  - DOMAIN,at.alicdn.com
+  # *.alipay.com | used by: DANA
+  - DOMAIN,imdap-sea.alipay.com
+  - DOMAIN,imgs-ac.alipay.com
+  - DOMAIN,imgs-id.alipay.com
+  - DOMAIN,mdap.alipay.com
+  # *.alipayobjects.com | used by: DANA
+  - DOMAIN,gw.alipayobjects.com
+  # *.branch.io | used by: DANA
+  - DOMAIN,cdn.branch.io
+  # *.ebuckler.com | used by: DANA
+  - DOMAIN,gw-dana.ebuckler.com
+  # *.gojekapi.com | used by: GoPay
+  - DOMAIN,api.gojekapi.com
+  - DOMAIN,gopay-raccoon.gojekapi.com
+  - DOMAIN,i.gojekapi.com
+  - DOMAIN,mqtt-customer-prd.gojekapi.com
+  # *.guardsquare.com | used by: DANA
+  - DOMAIN,dana.ingest.threatcast.guardsquare.com
+  - DOMAIN,dana.threatcast.guardsquare.com
+  # *.marmot-cloud.com | used by: DANA
+  - DOMAIN,cdn.marmot-cloud.com
+  - DOMAIN,cdn-dana.marmot-cloud.com
+  # *.scredit.sg | used by: ShopeePay
   - DOMAIN,cdn.scredit.sg
-  # *.shopeekredit.co.id
+  # *.shopeekredit.co.id | used by: ShopeePay
   - DOMAIN,promotion.shopeekredit.co.id
+  # *.signalfx.com | used by: DANA
+  - DOMAIN,rum-ingest.us1.signalfx.com
+  # *.split.io | used by: DANA
+  - DOMAIN,auth.split.io
+  - DOMAIN,events.split.io
+  - DOMAIN,sdk.split.io
