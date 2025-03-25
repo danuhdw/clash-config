@@ -52,6 +52,8 @@ payload:
   - DOMAIN,shopeepay.api.shopee.co.id
   # *.shopee.sg
   - DOMAIN,pay.shopee.sg
+  # *.susercontent.com
+  - DOMAIN,mms.img.susercontent.com
 
   # SPayLater & SPinjam
   # *.scredit.sg
