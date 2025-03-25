@@ -26,12 +26,29 @@ payload:
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
 
-  # Miscellaneous Services
-  # Various other services and platforms
-  # BukaOlshop
+  # Apps
+  # Akifah Store
   - DOMAIN,api2.bukaolshop.com
   - DOMAIN,storage3.bukaolshop.com
   - DOMAIN,openapi.bukaolshop.net
+  # Mitra Shopee
+  - DOMAIN-SUFFIX,mitra.shopee.co.id
+  # PLN Mobile
+  - DOMAIN-SUFFIX,iconcash.id
+  - DOMAIN-SUFFIX,pln.co.id
+  - DOMAIN-SUFFIX,plndigital.id
+  
+  # Remote Access
+  # Tailscale
+  - DOMAIN-SUFFIX,tailscale.com
+  - DOMAIN-SUFFIX,ts.net
+  # Zerotier
+  - DOMAIN-SUFFIX,zerotier.com
+  - DST-PORT,43899
+  - DST-PORT,9993
+
+  # Miscellaneous Services
+  # Various other services and platforms
   # Cloudflare
   - DOMAIN-SUFFIX,cloudflare.com
   # Datatabu
@@ -44,29 +61,14 @@ payload:
   - DOMAIN-SUFFIX,googleapis.com
   # JKI
   - DOMAIN-SUFFIX,slojki.com
-  # Mitra Shopee
-  - DOMAIN-SUFFIX,mitra.shopee.co.id
   # NetQ
   - DOMAIN-SUFFIX,netq.me
   # OpenWrt
   - DOMAIN,downloads.openwrt.org
   # OSS
   - DOMAIN-SUFFIX,oss.go.id
-  # PLN Mobile
-  - DOMAIN-SUFFIX,iconcash.id
-  - DOMAIN-SUFFIX,pln.co.id
-  - DOMAIN-SUFFIX,plndigital.id
   # Ujang Gatrik
   - DOMAIN,siujang.esdm.go.id
-  
-  # Remote Access
-  # Tailscale
-  - DOMAIN-SUFFIX,tailscale.com
-  - DOMAIN-SUFFIX,ts.net
-  # Zerotier
-  - DOMAIN-SUFFIX,zerotier.com
-  - DST-PORT,43899
-  - DST-PORT,9993
 
   # Test, Download, and Debug Services
   # Domains for testing, file downloads, or debugging (commented out)
