@@ -238,7 +238,7 @@ rules:
   # Direct rules for local or trusted traffic (no proxy)
   - RULE-SET,DIRECT,DIRECT
 
-  # Direct rules for financial services (Finance and e-wallet)
+  # Direct rules for financial services (finance and e-wallet)
   - RULE-SET,Finance,DIRECT
   - RULE-SET,E-Wallet,DIRECT
 
