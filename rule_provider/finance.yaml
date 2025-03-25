@@ -1,19 +1,33 @@
 payload:
+  # Banking
   # BRImo - BRI Mobile Banking
   - DOMAIN,brimo.bri.co.id
-
   # Jago - Digital Banking by Bank Jago
   - DOMAIN,api.jago.com
   - DOMAIN,assets.jago.com
   - DOMAIN,jago-realtime.ably.io
   - DOMAIN,jago-rest.ably.io
   - DOMAIN,jago-c-fallback.ably-realtime.com
-
   # Neo Bank - Digital Banking by Bank Neo Commerce
   - DOMAIN-SUFFIX,bankneo.co.id
-
   # SeaBank - Digital Banking by SeaBank Indonesia
   - DOMAIN-SUFFIX,seabank.co.id
-
   # SuperBank - Digital Banking by SuperBank
   - DOMAIN,api.super-id.net
+
+  # Digital Financial Services
+  # Flip
+  - DOMAIN-SUFFIX,flip.id
+  # Pegadaian
+  - DOMAIN-SUFFIX,pegadaian.co.id
+
+  # Investment/Trading Platforms
+  # - DOMAIN-SUFFIX,bareksa.com
+  # - DOMAIN-SUFFIX,bibit.id
+  # - DOMAIN-SUFFIX,pluang.com
+  # - DOMAIN-SUFFIX,stockbit.com
+  # - DOMAIN-SUFFIX,tokocrypto.com
+
+  # Payment Gateways
+  # - DOMAIN-SUFFIX,midtrans.com
+  # - DOMAIN-SUFFIX,xendit.co
