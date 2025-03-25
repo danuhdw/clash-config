@@ -48,8 +48,6 @@ payload:
   # ShopeePay
   # *.airpay.co.id
   - DOMAIN,api.gw.airpay.co.id
-  # *.byteoversea.com
-  - DOMAIN,mon-va.byteoversea.com
   # *.shopee.co.id
   - DOMAIN,shopeepay.api.shopee.co.id
   # *.shopee.sg
