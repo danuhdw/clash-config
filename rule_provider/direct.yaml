@@ -10,6 +10,7 @@ payload:
   - DST-PORT,853
 
   # CDN
+  - DOMAIN,cdn.jsdelivr.net
   - DOMAIN-SUFFIX,s3.amazonaws.com
 
   # Internet Service Providers (ISP)
