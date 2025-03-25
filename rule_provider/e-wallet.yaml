@@ -53,6 +53,7 @@ payload:
   # *.shopee.sg
   - DOMAIN,pay.shopee.sg
   # *.susercontent.com
+  - DOMAIN,down-id.img.susercontent.com
   - DOMAIN,mms.img.susercontent.com
 
   # SPayLater & SPinjam
