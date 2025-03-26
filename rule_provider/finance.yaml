@@ -1,5 +1,9 @@
 payload:
   # Banking
+  # Aladin
+  # Bank Saqu
+  - DOMAIN-SUFFIX,banksaqu.co.id
+  # blu
   # BRImo - BRI Mobile Banking
   - DOMAIN,brimo.bri.co.id
   # Jago - Digital Banking by Bank Jago
@@ -8,12 +12,15 @@ payload:
   - DOMAIN,jago-realtime.ably.io
   - DOMAIN,jago-rest.ably.io
   - DOMAIN,jago-c-fallback.ably-realtime.com
-  # Neo Bank - Digital Banking by Bank Neo Commerce
+  # Krom
+  # LINE Bank
+  # neobank - Digital Banking by Bank Neo Commerce
   - DOMAIN-SUFFIX,bankneo.co.id
   # SeaBank - Digital Banking by SeaBank Indonesia
   - DOMAIN-SUFFIX,seabank.co.id
-  # SuperBank - Digital Banking by SuperBank
+  # Superbank - Digital Banking by SuperBank
   - DOMAIN,api.super-id.net
+  # UOB TMRW ID
 
   # Digital Financial Services
   # Flip
