@@ -29,6 +29,8 @@ payload:
   - DOMAIN-SUFFIX,telkomsel.com
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
+  - DOMAIN,1186-ti.cloud.v-key.com
+  - DOMAIN,cloud.v-key.com
 
   # Apps
   # Akifah Store
