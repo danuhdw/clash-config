@@ -25,6 +25,8 @@ payload:
   - DOMAIN,myim3banner.kloc.co
   # by.U
   - DOMAIN-SUFFIX,byu.id
+  # MyTelkomsel
+  - DOMAIN-SUFFIX,telkomsel.com
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
 
