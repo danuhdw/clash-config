@@ -12,7 +12,7 @@ payload:
   # CDN
   - DOMAIN,cdn.jsdelivr.net
   - DOMAIN,code.jquery.com
-  - DOMAIN-SUFFIX,s3.amazonaws.com
+  - DOMAIN-SUFFIX,amazonaws.com
 
   # Internet Service Providers (ISP)
   # Domains related to ISP mobile apps or services
