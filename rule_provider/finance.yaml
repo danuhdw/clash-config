@@ -3,6 +3,7 @@ payload:
   # Aladin
   # Bank Saqu
   - DOMAIN-SUFFIX,banksaqu.co.id
+  - DOMAIN-SUFFIX,bjj.co.id
   # blu
   # BRImo - BRI Mobile Banking
   - DOMAIN,brimo.bri.co.id
