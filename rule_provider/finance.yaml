@@ -5,8 +5,8 @@ payload:
   - DOMAIN-SUFFIX,banksaqu.co.id
   - DOMAIN-SUFFIX,bjj.co.id
   # blu
-  # BRImo - BRI Mobile Banking
-  - DOMAIN,brimo.bri.co.id
+  # BRI / BRImo / BRImerchant
+  - DOMAIN-SUFFIX,brimo.bri.co.id
   # Jago - Digital Banking by Bank Jago
   - DOMAIN,api.jago.com
   - DOMAIN,assets.jago.com
