@@ -17,14 +17,14 @@ payload:
   # Internet Service Providers (ISP)
   # Domains related to ISP mobile apps or services
   # AXISnet
-  - DOMAIN,api.axis.co.id
+  - DOMAIN-SUFFIX,axis.co.id
   # bima+
+  - DOMAIN-SUFFIX,tri.co.id
   - DOMAIN,bimaasset.ioh.co.id
   - DOMAIN,bimaplus-api.ioh.co.id
-  - DOMAIN,bimaplus.tri.co.id
   - DOMAIN,myim3banner.kloc.co
   # by.U
-  - DOMAIN,api.byu.id
+  - DOMAIN-SUFFIX,byu.id
   # myXL
   - DOMAIN-KEYWORD,xlaxiata
 
