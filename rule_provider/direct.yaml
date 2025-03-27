@@ -24,8 +24,7 @@ payload:
   # by.U
   - DOMAIN,api.byu.id
   # myXL
-  - DOMAIN-SUFFIX,xlaxiata.co.id
-  - DOMAIN-SUFFIX,xlaxiata.id
+  - DOMAIN-KEYWORD,xlaxiata
 
   # Apps
   # Akifah Store
