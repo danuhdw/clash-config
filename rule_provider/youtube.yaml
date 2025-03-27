@@ -20,6 +20,8 @@ payload:
   # Domain suffixes for YouTube and its affiliated services
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gvt3.com
   - DOMAIN-SUFFIX,youtu.be
   - DOMAIN-SUFFIX,youtube.ae
   - DOMAIN-SUFFIX,youtube.al
