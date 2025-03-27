@@ -11,6 +11,7 @@ payload:
 
   # CDN
   - DOMAIN,cdn.jsdelivr.net
+  - DOMAIN,cdnjs.cloudflare.com
   - DOMAIN,code.jquery.com
   - DOMAIN-SUFFIX,s3.amazonaws.com
 
