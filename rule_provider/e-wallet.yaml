@@ -29,6 +29,7 @@ payload:
   - DOMAIN,auth.split.io
   - DOMAIN,events.split.io
   - DOMAIN,sdk.split.io
+  # *.zamcs.com
   - DOMAIN,gw.zamcs.com
 
   # GoPay
