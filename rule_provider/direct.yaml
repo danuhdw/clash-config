@@ -11,7 +11,6 @@ payload:
 
   # CDN
   - DOMAIN,cdn.jsdelivr.net
-  - DOMAIN,cdnjs.cloudflare.com
   - DOMAIN,code.jquery.com
   - DOMAIN-SUFFIX,s3.amazonaws.com
 
@@ -58,8 +57,8 @@ payload:
   - DOMAIN,raw.githubusercontent.com
   # Google / reCAPTCHA
   - DOMAIN,www.google.com
-  - DOMAIN,www.gstatic.com
   - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,gstatic.com
   # JKI
   - DOMAIN-SUFFIX,slojki.com
   # NetQ
