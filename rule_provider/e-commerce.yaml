@@ -40,6 +40,7 @@ payload:
   # *.lazcdn.com
   - DOMAIN,img.lazcdn.com
   - DOMAIN,img2.lazcdn.com
+  - DOMAIN,lazvideo.lazcdn.com
 
   # Shopee
   # *.shopee.co.id
