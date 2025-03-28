@@ -16,6 +16,7 @@ payload:
   - DOMAIN,jago-rest.ably.io
   - DOMAIN,jago-c-fallback.ably-realtime.com
   # Krom
+  - DOMAIN-SUFFIX,krom.id
   # LINE Bank
   # neobank - Digital Banking by Bank Neo Commerce
   - DOMAIN-SUFFIX,bankneo.co.id
