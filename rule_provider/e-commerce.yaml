@@ -98,6 +98,12 @@ payload:
   - DOMAIN,deo.shopeesz.com
   # *.txlivecdn.com
   - DOMAIN,play-tx-src.livestream.shopee.co.id.txlivecdn.com
+  # *.susercontent.com
+  - DOMAIN,api.sentry.susercontent.com
+  - DOMAIN,app-id.deo.susercontent.com
+  - DOMAIN,down-bs-id.img.susercontent.com
+  - DOMAIN,down-cvs-id.img.susercontent.com
+  - DOMAIN,down-zl-id.vod.susercontent.com
 
   # Tokopedia
   # *.gojekapi.com
