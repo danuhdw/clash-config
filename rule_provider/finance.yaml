@@ -7,24 +7,26 @@ payload:
   - DOMAIN-SUFFIX,bjj.co.id
   - DOMAIN,mobile.useinsider.com
   # blu
+  - DOMAIN-SUFFIX,blubybcadigital.id
   # BRI / BRImo / BRImerchant
   - DOMAIN-SUFFIX,bri.co.id
-  # Jago - Digital Banking by Bank Jago
-  - DOMAIN,api.jago.com
-  - DOMAIN,assets.jago.com
+  # Jago
+  - DOMAIN-SUFFIX,jago.com
   - DOMAIN,jago-realtime.ably.io
   - DOMAIN,jago-rest.ably.io
   - DOMAIN,jago-c-fallback.ably-realtime.com
   # Krom
   - DOMAIN-SUFFIX,krom.id
   # LINE Bank
-  # neobank - Digital Banking by Bank Neo Commerce
+  - DOMAIN-SUFFIX,linebank.co.id
+  # neobank
   - DOMAIN-SUFFIX,bankneo.co.id
-  # SeaBank - Digital Banking by SeaBank Indonesia
+  # SeaBank
   - DOMAIN-SUFFIX,seabank.co.id
-  # Superbank - Digital Banking by SuperBank
-  - DOMAIN,api.super-id.net
+  # Superbank
+  - DOMAIN-SUFFIX,super-id.net
   # UOB TMRW ID
+  - DOMAIN-SUFFIX,uob.co.id
 
   # Digital Financial Services
   # Flip
