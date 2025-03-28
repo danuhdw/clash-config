@@ -7,7 +7,7 @@ payload:
   - DOMAIN,mobile.useinsider.com
   # blu
   # BRI / BRImo / BRImerchant
-  - DOMAIN-SUFFIX,brimo.bri.co.id
+  - DOMAIN-SUFFIX,bri.co.id
   # Jago - Digital Banking by Bank Jago
   - DOMAIN,api.jago.com
   - DOMAIN,assets.jago.com
