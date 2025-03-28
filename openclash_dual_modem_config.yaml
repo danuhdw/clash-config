@@ -110,6 +110,11 @@ proxy-groups:
     use:
       - WAN-1
       - WAN-2
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # SPECIAL ACCESS is used for specific traffic that requires special handling,
   # such as blocking (REJECT) or fallback to another proxy.
@@ -121,11 +126,11 @@ proxy-groups:
       - BEST PING 2
       - FALLBACK
       - LOAD BALANCE
-    # url: "https://cp.cloudflare.com"
-    # interval: 60
-    # lazy: true
-    # timeout: 5000
-    # max-failed-times: 5
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # BEST PING 1 and BEST PING 2 are used to select the fastest proxy from WAN-1 and WAN-2.
   # This is critical for dual modem setups to ensure optimal performance.
@@ -133,11 +138,21 @@ proxy-groups:
     type: url-test
     use:
       - WAN-1
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   - name: BEST PING 2
     type: url-test
     use:
       - WAN-2
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # FALLBACK ensures traffic is routed to the next available proxy if the primary fails.
   - name: FALLBACK
@@ -146,11 +161,11 @@ proxy-groups:
       - BEST PING 2
       - BEST PING 1
       - DIRECT
-    # url: "https://cp.cloudflare.com"
-    # interval: 60
-    # lazy: true
-    # timeout: 5000
-    # max-failed-times: 5
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # LOAD BALANCE distributes traffic evenly across WAN-1 and WAN-2.
   - name: LOAD BALANCE
@@ -159,6 +174,11 @@ proxy-groups:
       - WAN-1
       - WAN-2
     strategy: consistent-hashing # or round-robin
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
 rule-providers:
   # Ensure the YAML files exist in the specified paths.

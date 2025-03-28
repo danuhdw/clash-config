@@ -95,6 +95,11 @@ proxy-groups:
     type: select
     use:
       - PROXIES
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # SPECIAL ACCESS is used for specific traffic that requires special handling,
   # such as blocking (REJECT) or fallback to another proxy.
@@ -106,11 +111,11 @@ proxy-groups:
       - BEST PING
       - FALLBACK
       - LOAD BALANCE
-    # url: "https://cp.cloudflare.com"
-    # interval: 60
-    # lazy: true
-    # timeout: 5000
-    # max-failed-times: 5
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # BEST PING are used to select the fastest proxy from Provider.
   # This is critical for dual modem setups to ensure optimal performance.
@@ -118,17 +123,22 @@ proxy-groups:
     type: url-test
     use:
       - PROXIES
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # FALLBACK ensures traffic is routed to the next available proxy if the primary fails.
   - name: FALLBACK
     type: fallback
     use:
       - PROXIES
-    # url: "https://cp.cloudflare.com"
-    # interval: 60
-    # lazy: true
-    # timeout: 5000
-    # max-failed-times: 5
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
   # LOAD BALANCE distributes traffic evenly across proxy.
   - name: LOAD BALANCE
@@ -136,6 +146,11 @@ proxy-groups:
     use:
       - PROXIES
     strategy: consistent-hashing # or round-robin
+    url: "https://cp.cloudflare.com"
+    interval: 60
+    lazy: true
+    timeout: 5000
+    max-failed-times: 5
 
 rule-providers:
   # Ensure the YAML files exist in the specified paths.
