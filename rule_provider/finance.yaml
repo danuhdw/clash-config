@@ -15,6 +15,8 @@ payload:
   - DOMAIN,jago-realtime.ably.io
   - DOMAIN,jago-rest.ably.io
   - DOMAIN,jago-c-fallback.ably-realtime.com
+  # GoPay Merchant
+  - DOMAIN,gopaymerchant.midtrans.com
   # Krom
   - DOMAIN-SUFFIX,krom.id
   # LINE Bank
