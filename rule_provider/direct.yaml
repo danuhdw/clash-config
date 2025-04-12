@@ -43,6 +43,9 @@ payload:
   - DOMAIN-SUFFIX,iconcash.id
   - DOMAIN-SUFFIX,pln.co.id
   - DOMAIN-SUFFIX,plndigital.id
+  # Tokopedia
+  - DOMAIN,gql.tokopedia.com
+  - DOMAIN,hub.tokopedia.com
   
   # Remote Access
   # Tailscale
