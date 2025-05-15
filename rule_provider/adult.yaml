@@ -1,6 +1,4 @@
 payload:
-    - DOMAIN-SUFFIX,justpaste.it
-
     # Browser-related domains
     # Keywords and suffixes for browsers often used to access restricted content
     - DOMAIN-KEYWORD,opera
