@@ -63,6 +63,8 @@ payload:
     # Datatabu
     - DOMAIN-SUFFIX,datatabu.com
     # Github
+    - DOMAIN,github.com
+    - DOMAIN,github.githubassets.com
     - DOMAIN,raw.githubusercontent.com
     # Google / reCAPTCHA
     - DOMAIN,www.google.com
