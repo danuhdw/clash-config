@@ -35,9 +35,7 @@ payload:
     # Apps
     # Akifah Store
     - DOMAIN,akifahid.tokowebku.com
-    - DOMAIN,api2.bukaolshop.com
-    - DOMAIN,storage3.bukaolshop.com
-    - DOMAIN,openapi.bukaolshop.net
+    - DOMAIN-SUFFIX,bukaolshop.com
     # Mitra Shopee
     - DOMAIN-SUFFIX,mitra.shopee.co.id
     # PLN Mobile
