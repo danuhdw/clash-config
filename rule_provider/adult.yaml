@@ -11,6 +11,7 @@ payload:
     # Domains for file hosting or video streaming platforms linked to adult content
     # Doodstream
     - DOMAIN-KEYWORD,dood
+    - DOMAIN-KEYWORD,do-od
     - DOMAIN-KEYWORD,d00d
     - DOMAIN-KEYWORD,d000d
     - DOMAIN-KEYWORD,do7go
