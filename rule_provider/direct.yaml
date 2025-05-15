@@ -1,87 +1,88 @@
 payload:
-  # Local Network
-  # IP range for local network access
-  - IP-CIDR,192.168.1.1/24
+    # Local Network
+    # IP range for local network access
+    - IP-CIDR,192.168.1.1/24
 
-  # DNS
-  - DOMAIN,dns.google
-  - DOMAIN-SUFFIX,cloudflare-dns.com
-  - DST-PORT,53
-  - DST-PORT,853
+    # DNS
+    - DOMAIN,dns.google
+    - DOMAIN-SUFFIX,cloudflare-dns.com
+    - DST-PORT,53
+    - DST-PORT,853
 
-  # CDN
-  - DOMAIN,cdn.jsdelivr.net
-  - DOMAIN,code.jquery.com
-  - DOMAIN-SUFFIX,amazonaws.com
+    # CDN
+    - DOMAIN,cdn.jsdelivr.net
+    - DOMAIN,code.jquery.com
+    - DOMAIN-SUFFIX,amazonaws.com
 
-  # Internet Service Providers (ISP)
-  # Domains related to ISP mobile apps or services
-  # AXISnet
-  - DOMAIN-SUFFIX,axis.co.id
-  # bima+
-  - DOMAIN-SUFFIX,tri.co.id
-  - DOMAIN,bimaasset.ioh.co.id
-  - DOMAIN,bimaplus-api.ioh.co.id
-  - DOMAIN,myim3banner.kloc.co
-  # by.U
-  - DOMAIN-SUFFIX,byu.id
-  # MyTelkomsel
-  - DOMAIN-SUFFIX,telkomsel.com
-  # myXL
-  - DOMAIN-KEYWORD,xlaxiata
-  - DOMAIN,1186-ti.cloud.v-key.com
-  - DOMAIN,cloud.v-key.com
+    # Internet Service Providers (ISP)
+    # Domains related to ISP mobile apps or services
+    # AXISnet
+    - DOMAIN-SUFFIX,axis.co.id
+    # bima+
+    - DOMAIN-SUFFIX,tri.co.id
+    - DOMAIN,bimaasset.ioh.co.id
+    - DOMAIN,bimaplus-api.ioh.co.id
+    - DOMAIN,myim3banner.kloc.co
+    # by.U
+    - DOMAIN-SUFFIX,byu.id
+    # MyTelkomsel
+    - DOMAIN-SUFFIX,telkomsel.com
+    # myXL
+    - DOMAIN-KEYWORD,xlaxiata
+    - DOMAIN,1186-ti.cloud.v-key.com
+    - DOMAIN,cloud.v-key.com
 
-  # Apps
-  # Akifah Store
-  - DOMAIN,api2.bukaolshop.com
-  - DOMAIN,storage3.bukaolshop.com
-  - DOMAIN,openapi.bukaolshop.net
-  # Mitra Shopee
-  - DOMAIN-SUFFIX,mitra.shopee.co.id
-  # PLN Mobile
-  - DOMAIN-SUFFIX,iconcash.id
-  - DOMAIN-SUFFIX,pln.co.id
-  - DOMAIN-SUFFIX,plndigital.id
-  # Tokopedia
-  - DOMAIN,gql.tokopedia.com
-  - DOMAIN,hub.tokopedia.com
-  
-  # Remote Access
-  # Tailscale
-  - DOMAIN-SUFFIX,tailscale.com
-  - DOMAIN-SUFFIX,ts.net
-  # Zerotier
-  - DOMAIN-SUFFIX,zerotier.com
-  - DST-PORT,43899
-  - DST-PORT,9993
+    # Apps
+    # Akifah Store
+    - DOMAIN,akifahid.tokowebku.com
+    - DOMAIN,api2.bukaolshop.com
+    - DOMAIN,storage3.bukaolshop.com
+    - DOMAIN,openapi.bukaolshop.net
+    # Mitra Shopee
+    - DOMAIN-SUFFIX,mitra.shopee.co.id
+    # PLN Mobile
+    - DOMAIN-SUFFIX,iconcash.id
+    - DOMAIN-SUFFIX,pln.co.id
+    - DOMAIN-SUFFIX,plndigital.id
+    # Tokopedia
+    - DOMAIN,gql.tokopedia.com
+    - DOMAIN,hub.tokopedia.com
 
-  # Miscellaneous Services
-  # Various other services and platforms
-  # Cloudflare
-  - DOMAIN-SUFFIX,cloudflare.com
-  # Datatabu
-  - DOMAIN-SUFFIX,datatabu.com
-  # Github
-  - DOMAIN,raw.githubusercontent.com
-  # Google / reCAPTCHA
-  - DOMAIN,www.google.com
-  - DOMAIN-SUFFIX,googleapis.com
-  - DOMAIN-SUFFIX,gstatic.com
-  # JKI
-  - DOMAIN-SUFFIX,slojki.com
-  # NetQ
-  - DOMAIN-SUFFIX,netq.me
-  # OpenWrt
-  - DOMAIN,downloads.openwrt.org
-  # OSS
-  - DOMAIN-SUFFIX,oss.go.id
-  # Ujang Gatrik
-  - DOMAIN,siujang.esdm.go.id
+    # Remote Access
+    # Tailscale
+    - DOMAIN-SUFFIX,tailscale.com
+    - DOMAIN-SUFFIX,ts.net
+    # Zerotier
+    - DOMAIN-SUFFIX,zerotier.com
+    - DST-PORT,43899
+    - DST-PORT,9993
 
-  # Test, Download, and Debug Services
-  # Domains for testing, file downloads, or debugging (commented out)
-  # - DOMAIN-SUFFIX,filedon.co
-  # - DOMAIN-SUFFIX,surrit.com
-  # - DOMAIN-SUFFIX,updrv.com
-  # - DOMAIN-SUFFIX,pixeldrain.com
+    # Miscellaneous Services
+    # Various other services and platforms
+    # Cloudflare
+    - DOMAIN-SUFFIX,cloudflare.com
+    # Datatabu
+    - DOMAIN-SUFFIX,datatabu.com
+    # Github
+    - DOMAIN,raw.githubusercontent.com
+    # Google / reCAPTCHA
+    - DOMAIN,www.google.com
+    - DOMAIN-SUFFIX,googleapis.com
+    - DOMAIN-SUFFIX,gstatic.com
+    # JKI
+    - DOMAIN-SUFFIX,slojki.com
+    # NetQ
+    - DOMAIN-SUFFIX,netq.me
+    # OpenWrt
+    - DOMAIN,downloads.openwrt.org
+    # OSS
+    - DOMAIN-SUFFIX,oss.go.id
+    # Ujang Gatrik
+    - DOMAIN,siujang.esdm.go.id
+
+    # Test, Download, and Debug Services
+    # Domains for testing, file downloads, or debugging (commented out)
+    # - DOMAIN-SUFFIX,filedon.co
+    # - DOMAIN-SUFFIX,surrit.com
+    # - DOMAIN-SUFFIX,updrv.com
+    # - DOMAIN-SUFFIX,pixeldrain.com
