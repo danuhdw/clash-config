@@ -19,6 +19,8 @@ payload:
     - DOMAIN-SUFFIX,ds2play.com
     # Terabox
     - DOMAIN-KEYWORD,terabox
+    # Videy
+    - DOMAIN-KEYWORD,videy
 
     # Adult Content Websites
     # Keywords and domains explicitly tied to adult material
