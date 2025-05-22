@@ -37,6 +37,7 @@ payload:
     - DOMAIN,akifahid.tokowebku.com
     - DOMAIN-SUFFIX,bukaolshop.com
     - DOMAIN-SUFFIX,bukaolshop.net
+    - DOMAIN-SUFFIX,kilatstorage.id
     # Mitra Shopee
     - DOMAIN-SUFFIX,mitra.shopee.co.id
     # PLN Mobile
