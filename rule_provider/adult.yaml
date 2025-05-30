@@ -17,6 +17,8 @@ payload:
     - DOMAIN-KEYWORD,poop
     - DOMAIN-SUFFIX,ds2play.com
     # Terabox
+    - DOMAIN-KEYWORD,luluvdo
+    # Terabox
     - DOMAIN-KEYWORD,terabox
     # Videy
     - DOMAIN-KEYWORD,videy
