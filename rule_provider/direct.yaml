@@ -35,6 +35,7 @@ payload:
     # Apps
     # Akifah Store
     - DOMAIN,akifahid.tokowebku.com
+    - DOMAIN,akifahstore.wordpress.com
     - DOMAIN,aplikasilayanandigital.my.id
     - DOMAIN-SUFFIX,bukaolshop.com
     - DOMAIN-SUFFIX,bukaolshop.net
