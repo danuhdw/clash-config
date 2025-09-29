@@ -20,6 +20,8 @@ payload:
     - DOMAIN-KEYWORD,luluvdo
     # Terabox
     - DOMAIN-KEYWORD,terabox
+    # Vidcloud
+    - DOMAIN-KEYWORD,vidcloud
     # Videy
     - DOMAIN-KEYWORD,videy
 
