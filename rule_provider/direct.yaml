@@ -75,6 +75,9 @@ payload:
     - DOMAIN-SUFFIX,gstatic.com
     # JKI
     - DOMAIN-SUFFIX,slojki.com
+    # MetaTrader
+    - DOMAIN-KEYWORD,mt4
+    - DOMAIN-KEYWORD,mt5
     # NetQ
     - DOMAIN-SUFFIX,netq.me
     # OpenWrt
